@@ -1,0 +1,33 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Task": 2,
+    "TypeTask": 2,
+    "personnel": 3,
+    "StatusTask": 2
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Task": {
+      "1": "{\"name\":\"string\",\"description\":\"string\",\"assignTo\":2,\"taskEnd\":\"2019-04-14T04:01:47.230Z\",\"typeTasksId\":1,\"statusTaskId\":1,\"personCreated\":1,\"id\":1}"
+    },
+    "TypeTask": {
+      "1": "{\"name\":\"bajo\",\"description\":\"string\",\"level\":1,\"color\":\"white\",\"id\":1}"
+    },
+    "personnel": {
+      "1": "{\"name\":\"chicho\",\"lastName\":\"string\",\"level\":1,\"id\":1}",
+      "2": "{\"name\":\"botones\",\"lastName\":\"string\",\"level\":1,\"id\":2}"
+    },
+    "StatusTask": {
+      "1": "{\"name\":\"initial\",\"color\":\"white\",\"fontColor\":\"black\",\"id\":1}"
+    }
+  }
+}

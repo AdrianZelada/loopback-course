@@ -1,0 +1,47 @@
+{
+  "name": "StatusTask",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "default": "white"
+    },
+    "fontColor": {
+      "type": "string",
+      "default": "black"
+    },
+    "createdAt": {
+      "type": "date",
+      "required": false,
+      "mysql": {
+        "columnName": "created_at",
+        "dataType": "TIMESTAMP",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tasks": {
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": "statusTaskId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

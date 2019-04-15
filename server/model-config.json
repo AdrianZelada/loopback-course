@@ -34,5 +34,25 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Task": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "TypeTask": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "personnel": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "StatusTask": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "upload": {
+    "dataSource": "upload",
+    "public": true
   }
 }

@@ -1,0 +1,55 @@
+{
+  "name": "personnel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    "createdAt": {
+      "type": "date",
+      "required": false,
+      "mysql": {
+        "columnName": "created_at",
+        "dataType": "TIMESTAMP",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tasks": {
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": "assignTo",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "tasksCreated": {
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": "personCreated",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

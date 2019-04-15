@@ -1,6 +1,22 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "memory",
+    "file": "data.json"
+  },
+  "mysqlDs": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "TaskManager",
+    "password": "",
+    "name": "mysqlDs",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "upload": {
+    "name": "upload",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage/uploads"
   }
 }

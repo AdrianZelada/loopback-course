@@ -1,0 +1,42 @@
+{
+  "name": "TypeTask",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "description"
+    },
+    "description": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "default": "white"
+    },
+    "createdAt": {
+      "type": "date",
+      "required": false,
+      "mysql": {
+        "columnName": "created_at",
+        "dataType": "TIMESTAMP",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

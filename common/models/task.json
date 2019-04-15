@@ -1,0 +1,78 @@
+{
+  "name": "Task",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "personCreated": {
+      "type": "number",
+      "required": true
+    },
+    "assignTo": {
+      "type": "number",
+      "required": true
+    },
+    "taskEnd": {
+      "type": "date"
+    },
+    "createdAt": {
+      "type": "date",
+      "required": false,
+      "mysql": {
+        "columnName": "created_at",
+        "dataType": "TIMESTAMP",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "typeTasks": {
+      "type": "belongsTo",
+      "model": "TypeTask",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "personCreated": {
+      "type": "belongsTo",
+      "model": "personnel",
+      "foreignKey": "personCreated",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "personAssign": {
+      "type": "belongsTo",
+      "model": "personnel",
+      "foreignKey": "assignTo",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "statusTask": {
+      "type": "belongsTo",
+      "model": "StatusTask",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
