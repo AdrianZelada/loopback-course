@@ -18,10 +18,11 @@ module.exports = function(Personnel) {
   // Personnel.findById()
 
   Personnel.levelMajor = function(level, cb) {
+    // level = level - 1;
     Personnel.find({
       where: {
         level: {
-          gt: level,
+          gte: level,
         },
       },
     }, function(e, data) {

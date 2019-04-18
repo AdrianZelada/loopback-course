@@ -8,7 +8,8 @@
     "Task": 2,
     "TypeTask": 2,
     "personnel": 3,
-    "StatusTask": 2
+    "StatusTask": 5,
+    "Difficulty": 8
   },
   "models": {
     "User": {},
@@ -16,18 +17,22 @@
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
-    "Task": {
-      "1": "{\"name\":\"string\",\"description\":\"string\",\"assignTo\":2,\"taskEnd\":\"2019-04-14T04:01:47.230Z\",\"typeTasksId\":1,\"statusTaskId\":1,\"personCreated\":1,\"id\":1}"
-    },
-    "TypeTask": {
-      "1": "{\"name\":\"bajo\",\"description\":\"string\",\"level\":1,\"color\":\"white\",\"id\":1}"
-    },
-    "personnel": {
-      "1": "{\"name\":\"chicho\",\"lastName\":\"string\",\"level\":1,\"id\":1}",
-      "2": "{\"name\":\"botones\",\"lastName\":\"string\",\"level\":1,\"id\":2}"
-    },
+    "Task": {},
+    "personnel": {"0":"{\"id\":0,\"name\":\"Charlotte\",\"lastName\":\"Collier\",\"level\":6,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","1":"{\"id\":1,\"name\":\"Graves\",\"lastName\":\"Nguyen\",\"level\":4,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","2":"{\"id\":2,\"name\":\"Rosalinda\",\"lastName\":\"Walsh\",\"level\":5,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","3":"{\"id\":3,\"name\":\"Bertie\",\"lastName\":\"Bolton\",\"level\":1,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","4":"{\"id\":4,\"name\":\"Cruz\",\"lastName\":\"Harrington\",\"level\":3,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","5":"{\"id\":5,\"name\":\"Liz\",\"lastName\":\"Ingram\",\"level\":3,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","6":"{\"id\":6,\"name\":\"Celina\",\"lastName\":\"Silva\",\"level\":4,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","7":"{\"id\":7,\"name\":\"Luna\",\"lastName\":\"Herring\",\"level\":7,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","8":"{\"id\":8,\"name\":\"Chavez\",\"lastName\":\"Mercado\",\"level\":2,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","9":"{\"id\":9,\"name\":\"Simone\",\"lastName\":\"Foreman\",\"level\":6,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","10":"{\"id\":10,\"name\":\"Jacqueline\",\"lastName\":\"Hobbs\",\"level\":5,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","11":"{\"id\":11,\"name\":\"Charles\",\"lastName\":\"Ellis\",\"level\":7,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","12":"{\"id\":12,\"name\":\"Crosby\",\"lastName\":\"Acosta\",\"level\":1,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","13":"{\"id\":13,\"name\":\"Herrera\",\"lastName\":\"Nicholson\",\"level\":2,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","14":"{\"id\":14,\"name\":\"Calhoun\",\"lastName\":\"Patel\",\"level\":4,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","15":"{\"id\":15,\"name\":\"Etta\",\"lastName\":\"Diaz\",\"level\":2,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","16":"{\"id\":16,\"name\":\"Mcfarland\",\"lastName\":\"Ellison\",\"level\":1,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","17":"{\"id\":17,\"name\":\"Stone\",\"lastName\":\"Leach\",\"level\":4,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","18":"{\"id\":18,\"name\":\"Maddox\",\"lastName\":\"Martinez\",\"level\":0,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}","19":"{\"id\":19,\"name\":\"English\",\"lastName\":\"Orr\",\"level\":3,\"createdAt\":\"Thu Apr 18 2019 00:05:49 GMT-0400 (Bolivia Time)\"}"}
+  ,
     "StatusTask": {
-      "1": "{\"name\":\"initial\",\"color\":\"white\",\"fontColor\":\"black\",\"id\":1}"
+      "1": "{\"name\":\"nuevo\",\"color\":\"mediumturquoise\",\"fontColor\":\"white\",\"createdAt\":\"2019-04-18T03:19:18.449Z\",\"id\":2}",
+      "2": "{\"name\":\"Confirmado\",\"color\":\"lightcyan\",\"fontColor\":\"white\",\"createdAt\":\"2019-04-18T03:19:18.449Z\",\"id\":3}",
+      "3": "{\"name\":\"Resuelto\",\"color\":\"palegreen\",\"fontColor\":\"white\",\"createdAt\":\"2019-04-18T03:19:18.449Z\",\"id\":4}"
+    },
+    "Difficulty": {
+      "1": "{\"name\":\"Pollito\",\"description\":\"Pollito\",\"level\":0,\"color\":\"white\",\"createdAt\":\"2019-04-18T03:19:17.820Z\",\"id\":1}",
+      "2": "{\"name\":\"Hacha de Piedra\",\"description\":\"Hacha de Piedra\",\"level\":1,\"color\":\"yellow\",\"createdAt\":\"2019-04-18T03:19:17.820Z\",\"id\":2}",
+      "3": "{\"name\":\"Hacha de Plata\",\"description\":\"Hacha de Plata\",\"level\":2,\"color\":\"gray\",\"createdAt\":\"2019-04-18T03:19:17.820Z\",\"id\":3}",
+      "4": "{\"name\":\"Hacha de Oro\",\"description\":\"Hacha de Oro\",\"level\":3,\"color\":\"gold\",\"createdAt\":\"2019-04-18T03:19:17.820Z\",\"id\":4}",
+      "5": "{\"name\":\"Estrella de Bronce\",\"description\":\"Estrella de Bronce\",\"level\":4,\"color\":\"orange\",\"createdAt\":\"2019-04-18T03:19:17.820Z\",\"id\":5}",
+      "6": "{\"id\":6,\"name\":\"Estrella de Plata\",\"description\":\"Estrella de Plata\",\"level\":5,\"color\":\"silver\",\"createdAt\":\"2019-04-18T03:19:17.820Z\"}",
+      "7": "{\"id\":7,\"name\":\"Estrella de Oro\",\"description\":\"Estrella de Oro\",\"level\":6,\"color\":\"goldenrod\",\"createdAt\":\"2019-04-18T03:19:17.820Z\"}"
     }
   }
 }

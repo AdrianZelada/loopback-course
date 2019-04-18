@@ -36,23 +36,23 @@
     "public": false
   },
   "Task": {
-    "dataSource": "mysqlDs",
+    "dataSource": "db",
     "public": true
   },
-  "TypeTask": {
-    "dataSource": "mysqlDs",
+  "Difficulty": {
+    "dataSource": "db",
     "public": true
   },
   "personnel": {
-    "dataSource": "mysqlDs",
+    "dataSource": "db",
     "public": true
   },
   "StatusTask": {
-    "dataSource": "mysqlDs",
+    "dataSource": "db",
     "public": true
   },
   "upload": {
-    "dataSource": "upload",
+    "dataSource": "db",
     "public": true
   }
 }

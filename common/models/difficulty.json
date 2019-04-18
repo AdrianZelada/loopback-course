@@ -1,5 +1,5 @@
 {
-  "name": "TypeTask",
+  "name": "Difficulty",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "Validates": {}
+  },
   "properties": {
     "name": {
       "type": "string",
@@ -40,9 +43,9 @@
   },
   "validations": [],
   "relations": {
-    "typeTasks": {
+    "difficulty": {
       "type": "belongsTo",
-      "model": "TypeTask",
+      "model": "Difficulty",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
